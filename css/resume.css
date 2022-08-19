@@ -97,7 +97,7 @@ font-family: "Source Code Pro", monospace; */
 }
 
 .resume {
-  width: 70vw;
+  width: 66vw;
   height: 92vw;
   margin: 0rem auto;
   background-image: url("/assests/resume.png");
@@ -129,8 +129,8 @@ font-family: "Source Code Pro", monospace; */
     height: 100vh;
   }
   .resume {
-     width: 59vw;
-    height: 87vh;
+    width: 55vw;
+    height: 77vw;
   }
 }
 @media screen and (max-width: 430px) {
@@ -143,14 +143,9 @@ font-family: "Source Code Pro", monospace; */
     height: 100vh;
   }
   .resume {
-    width: 92vw;
-    height: 57vh;
+    width: 90vw;
+    height: 125vw;
     margin-top: 10vh;
   }
 }
-@media screen and (max-width: 330px) {
 
-  .resume {
-    height: 68vh;
-  }
-}
