@@ -75,8 +75,12 @@ font-family: "Source Code Pro", monospace; */
 .sidebar nav a:hover {
   border-radius: 0.3rem;
    box-shadow: inset 10rem 0 0 0 #fff;
-  color: black;
-}
+   color: black;
+  }
+  
+.active{
+  color: black !important; 
+  }
 
 .sidehide{
   transform: translateX(-13rem);

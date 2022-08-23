@@ -6,8 +6,6 @@ font-family: 'Lato', sans-serif;
 font-family: 'Fira Sans', sans-serif;
 font-family: "Source Code Pro", monospace; */
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -24,8 +22,8 @@ font-family: "Source Code Pro", monospace; */
   --bg: rgba(173, 216, 230, 0.7);
   --source: "Source Code Pro", monospace;
   --shadow: rgba(72, 61, 139, 0.5) 5px 5px, rgba(72, 61, 139, 0.4) 10px 10px,
-  rgba(72, 61, 139, 0.3) 15px 15px, rgba(72, 61, 139, 0.2) 20px 20px,
-  rgba(72, 61, 139, 0.1) 25px 25px;
+    rgba(72, 61, 139, 0.3) 15px 15px, rgba(72, 61, 139, 0.2) 20px 20px,
+    rgba(72, 61, 139, 0.1) 25px 25px;
 }
 
 ::-webkit-scrollbar {
@@ -36,13 +34,17 @@ font-family: "Source Code Pro", monospace; */
   background-color: var(--primaryColor);
   width: 100vw;
   height: 15vh;
-  transition: transform 0.3s ;
+  transition: transform 0.3s;
 }
 
 .sidebar nav {
   padding: 2rem;
   height: 100%;
-  background-image: linear-gradient( to top, rgb(78 102 171) 10.8%, rgba(99,88,238,1) 94.3% );
+  background-image: linear-gradient(
+    to top,
+    rgb(78 102 171) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
 }
 
 .sidebar nav ul {
@@ -65,7 +67,8 @@ font-family: "Source Code Pro", monospace; */
   box-shadow: inset 0 0 0 0 #fff;
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    border-radius 0.3s ease-in-out;
 }
 
 .sidebar nav a:hover {
@@ -74,12 +77,16 @@ font-family: "Source Code Pro", monospace; */
   color: black;
 }
 
-.sidehide{
+.active {
+  color: black !important;
+}
+
+.sidehide {
   transform: translateY(-13rem);
   position: absolute;
 }
 
-.hamburger{
+.hamburger {
   display: inline-block;
   position: absolute;
   cursor: pointer;
@@ -91,7 +98,11 @@ font-family: "Source Code Pro", monospace; */
   height: 100vw;
   width: 100vw;
   background-color: var(--bg);
-  background-image: linear-gradient( to bottom, rgb(78 102 171) 10.8%, rgb(173 175 230) 94.3% );
+  background-image: linear-gradient(
+    to bottom,
+    rgb(78 102 171) 10.8%,
+    rgb(173 175 230) 94.3%
+  );
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
@@ -104,12 +115,12 @@ font-family: "Source Code Pro", monospace; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  box-shadow:var(--shadow);
+  box-shadow: var(--shadow);
   border-radius: 1rem;
 }
 
 @media screen and (max-width: 1025px) {
-  .sidehide{
+  .sidehide {
     transform: translateY(-40rem);
     position: absolute;
   }
@@ -148,4 +159,3 @@ font-family: "Source Code Pro", monospace; */
     margin-top: 10vh;
   }
 }
-
